@@ -114,6 +114,64 @@ pt=sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Sex',data=df)
 ```
 <img width="863" height="517" alt="{0EC1EEB2-ACEC-4348-9AF3-5B4CA682A25C}" src="https://github.com/user-attachments/assets/228b775d-c384-40d8-b4b8-b4805e370b37" />
 
+```py
+import seaborn as sns
+sns.countplot(data=df)
+df
+```
+<img width="856" height="525" alt="image" src="https://github.com/user-attachments/assets/68a3920d-35e0-4ca5-a519-a8a4bee51b77" />
+
+```py
+sns.countplot(x="Survived",hue="Gender",data=df)
+```
+![WhatsApp Image 2025-10-07 at 16 12 16_e89518c6](https://github.com/user-attachments/assets/380677ea-ee44-4662-8b01-50c8ff061397)
+
+```py
+sns.catplot(x="Survived",hue="Gender",data=df,kind="violin)
+```
+![WhatsApp Image 2025-10-07 at 16 14 56_91947bbc](https://github.com/user-attachments/assets/560224fd-33f5-414d-9f24-532720b83f14)
+
+```py
+sns.boxplot(data=df)
+```
+![WhatsApp Image 2025-10-07 at 16 17 38_c4c7bf84](https://github.com/user-attachments/assets/45f2522d-1e10-4c2f-8ffe-fb927ead37df)
+
+```py
+df.boxplot(column="Survived",by="Gender")
+```
+![WhatsApp Image 2025-10-07 at 16 19 05_133943b2](https://github.com/user-attachments/assets/a76a3ae5-6733-4f19-bdce-b9f7aaead259)
+
+```py
+sns.scatterplot(data=df)
+```
+<img width="707" height="522" alt="{5A781AB3-B1BC-45DE-B3C8-BDC9A7010140}" src="https://github.com/user-attachments/assets/df15f556-b5e5-4820-ab91-85c223fc3e39" />
+
+```py
+sns.joinplot(x='Age',y='Fare',data=df,kind="kide")
+```
+<img width="805" height="810" alt="{8BD91B47-AD55-4D35-8E00-32ABBB042544}" src="https://github.com/user-attachments/assets/91289104-9a1a-4feb-9436-31e6320056ee" />
+
+```py
+sns.joinplot(x='Age',y='Fare',data=df,kind="hist")
+```
+<img width="745" height="674" alt="{A7D3A380-A726-434C-A4DB-35FDD083D12E}" src="https://github.com/user-attachments/assets/feec1613-75cf-45eb-b88b-a887c59c56e6" />
+
+```py
+sns.pairplot(data=df)
+```
+<img width="835" height="854" alt="{BBEBB40C-54A8-43FC-830E-DC600A754865}" src="https://github.com/user-attachments/assets/2855fb70-3d33-4341-93f4-0bf441386682" />
+
+```py
+corr =dt.corr()
+sns.heatmap(corr,annot=True)
+```
+<img width="583" height="421" alt="{5E0B6598-EC2B-4865-B6EF-BDF30BEAF667}" src="https://github.com/user-attachments/assets/f7415d55-59b4-4103-a492-fc88ee106cdd" />
+
+```py
+sns.catplot(x='Gender',col='Survived',data=df,kind='count',color='green')
+```
+<img width="704" height="352" alt="image" src="https://github.com/user-attachments/assets/cd010233-da96-464d-a416-6c73894520f1" />
+
 
 # RESULT
         <<INCLUDE YOUR RESULT HERE>>
