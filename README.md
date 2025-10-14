@@ -174,4 +174,4 @@ sns.catplot(x='Gender',col='Survived',data=df,kind='count',color='green')
 
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+Thus the program was executed successfully
